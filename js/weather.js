@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',function(){
 
 		// API
-		const KEY = '0f8ef01f456eaf35384c35ae1d843f67';
+		
 		const APIKEY = 'a85201568a273c4d5d605d5476e26c5f'; //dante.cifuentes@gmail.com
 		const COUNTRY = 'Guatemala';
 		var METRIC = get_metric() || 'metric';
