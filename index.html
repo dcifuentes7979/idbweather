@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>IDB Weather</title>
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+
+	<script type="text/javascript" src="js/weather.js?version=2"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css?version=3">
+</head>
+<body>
+
+	<div id="content_primary">
+
+		<!-- Dropdown -->
+		<div class="content_metric">
+			<select id="metric">
+				<option value="metric">Celcius</option>
+				<option value="imperial">Fahrenheit</option>
+			</select>
+		</div>
+		
+		<!--Current Date-->
+		<div class="content_date">
+			<h5 id="date"></h5>
+		</div>
+		
+		<div id="content_sun" style="display:none;">
+			<div class="icon sun-shower">
+			  <div class="cloud"></div>
+			  <div class="sun">
+			    <div class="rays"></div>
+			  </div>
+			  <div class="rain"></div>
+			</div>
+		</div>
+
+		<div id="content_thunder" style="display:none;">
+			<div class="icon thunder-storm">
+			  <div class="cloud"></div>
+			  <div class="lightning">
+			    <div class="bolt"></div>
+			    <div class="bolt"></div>
+			  </div>
+			</div>
+		</div>
+
+		<div id="content_cloudy" style="display:none;">
+			<div class="icon cloudy">
+			  <div class="cloud"></div>
+			  <div class="cloud"></div>
+			</div>
+		</div>
+
+		<div id="content_flurries" style="display:none;">
+			<div class="icon flurries">
+			  <div class="cloud"></div>
+			  <div class="snow">
+			    <div class="flake"></div>
+			    <div class="flake"></div>
+			  </div>
+			</div>
+		</div>
+
+		<div id="content_sunny" style="display:none;">
+			<div class="icon sunny">				
+				  <div class="sun">
+				    <div class="rays"></div>
+				  </div>
+			</div>
+		</div>
+
+		<div id="content_rainy" style="display:none;">
+			<div class="icon rainy">
+			  <div class="cloud"></div>
+			  <div class="rain"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="content_seconday">
+		<h3 class="light font_size" id="day"></h3>
+		<h3 class="light font_size" id="condition"></h3>
+		<div class="content_other">
+			<p>Pressure <span id="pression"></span><span>hPa</span></p>
+			<!--<p>Location <span id="location"></span></p>-->
+			<!--<p>Temperature <span id="temp"></span></p>-->
+			<p>Humidity <span id="humidity"></span><span>%</span></p>
+		</div>
+		<div class="content_other">
+			<p>Probability of precipitation <span id="pp"></span><span>%</span></p>
+			<p>Wind <span id="wind"></span><span>km/h</span></p>
+		</div>
+		<div style="margin:10px 0px;">
+			<hr>
+		</div>
+
+		<div class="content_flex flex_align_around">
+			<h3 class="bold font_size" id="t_min"></h3>
+			<h3 class="bold font_size">/</h3>
+			<h3 class="bold font_size" id="t_max"></h3>
+		</div>
+	</div>
+
+	<div id="content_forecast">
+		<img src="assets/load.svg" width="100">
+		<p>Loading forecast</p>
+	</div>
+
+</body>
+</html>
