@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 		// API
 		
-		const APIKEY = 'a85201568a273c4d5d605d5476e26c5f'; //dante.cifuentes@gmail.com
+		const APIKEY = 'a85201568a273c4d5d605d5476e26c5f'; //dante.cifuentes@gmail.com openweather
 		const COUNTRY = 'Guatemala';
 		var METRIC = get_metric() || 'metric';
 		var SIMBOL = get_simbol() || '°C';
